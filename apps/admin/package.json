@@ -6,7 +6,7 @@
     "prepare": "panda codegen",
     "build": "vite build",
     "clean": "rm -rf dist",
-    "dev": "vite --host 0.0.0.0 --port 3001 --clearScreen false",
+    "dev": "vite --host 0.0.0.0 --port 3001 --open --clearScreen false",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src/"
   },
