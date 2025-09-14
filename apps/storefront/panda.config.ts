@@ -2,6 +2,12 @@ import { defineConfig } from "@pandacss/dev";
 import preset from "@repo/ui/preset";
 
 export default defineConfig({
+
+	// strictTokens Ref: https://panda-css.com/docs/concepts/writing-styles#stricttokens
+	// strictTokens: true, // only use token values in your styles. This prevents the use of custom or raw CSS values. 
+
+	// EXISTING CONFIG BELOW
+
   // Whether to use css reset
   preflight: true,
 
