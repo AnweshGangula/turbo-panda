@@ -1,5 +1,10 @@
 import "./styles.css";
 
+export const metadata = {
+	title: "Store | Kitchen Sink",
+	description: "This is the description"
+};
+  
 export default function RootLayout({
   children,
 }: {

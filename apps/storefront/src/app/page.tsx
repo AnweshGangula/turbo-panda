@@ -1,6 +1,7 @@
 import { log } from "@repo/logger";
 import { css } from "@repo/styled-system/css";
 import { CounterButton, Link } from "@repo/ui";
+import Home from './pages/home';
 
 export const metadata = {
   title: "Store | Kitchen Sink",
@@ -63,6 +64,7 @@ export default function Store(): JSX.Element {
           Next.js
         </Link>
       </p>
+	  <Home />
     </div>
   );
 }
