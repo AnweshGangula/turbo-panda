@@ -1,5 +1,5 @@
+import Home from '@/pages/home';
 import { log } from '@repo/logger';
-import Home from '../pages/home';
 
 export const metadata = {
 	title: 'Store | Kitchen Sink',

@@ -1,21 +1,25 @@
 {
-  "exclude": ["node_modules"],
-  "extends": "@repo/typescript-config/nextjs.json",
-  "compilerOptions": {
-    "outDir": "dist",
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
-    "allowJs": true
-  },
-  "include": [
-    "src",
-    "next.config.js",
-    "next-env.d.ts",
-    ".next/types/**/*.ts",
-    "panda.config.ts",
-    "../../packages/styled-system"
-  ]
+	"exclude": ["node_modules"],
+	"extends": "@repo/typescript-config/nextjs.json",
+	"compilerOptions": {
+		"outDir": "dist",
+		"plugins": [
+			{
+				"name": "next"
+			}
+		],
+		"allowJs": true,
+		"strictNullChecks": true,
+		"paths": {
+			"@/*": ["./src/*"]
+		}
+	},
+	"include": [
+		"src",
+		"next.config.js",
+		"next-env.d.ts",
+		".next/types/**/*.ts",
+		"panda.config.ts",
+		"../../packages/styled-system"
+	]
 }
