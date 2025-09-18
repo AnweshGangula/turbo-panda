@@ -2,6 +2,7 @@
 // import PostListPage from './blog/page';
 import './home.css';
 import { metadata } from '../app/layout';
+import { css } from '@repo/styled-system/css';
 
 export default function Home() {
 	return (
@@ -12,16 +13,21 @@ export default function Home() {
 					initialInView={false}
 					className={'m-auto animatedLogo'}
 				/> */}
-				<div className='max-w-[700px]'>
+				<div className={css({ maxW: '700px' })}>
 					<div>
-						<big className='text-2xl' aria-hidden='true'>
+						<span
+							className={css({ fontSize: '2xl', lineHeight: '2xl' })}
+							aria-hidden='true'
+						>
 							👋
-						</big>
-						<p className='inline'>Hi, I am</p>{' '}
+						</span>
+						<p className={css({ display: 'inline' })}>Hi, I am</p>{' '}
 						{/* changes for narrator - accessibility */}
 					</div>
-					<h1 className='p-0 mb-1 gradientText'>Anwesh Gangula</h1>
-					<p className='mb-6'>{metadata.description}</p>
+					<h1 className={css({ p: '0', mb: '1' }) + ' gradientText'}>
+						Anwesh Gangula
+					</h1>
+					<p className={css({ mb: '6' })}>{metadata.description}</p>
 					<p>
 						Welcome to my "Digital Garden". This is where I would like to share
 						& showcase:
@@ -36,9 +42,7 @@ export default function Home() {
 					</p> */}
 				</div>
 			</div>
-			<section className='postList'>
-				{/* <PostListPage /> */}
-			</section>
+			<section className='postList'>{/* <PostListPage /> */}</section>
 		</>
 	);
 }
