@@ -1,7 +1,7 @@
 // import AnimatedLogo from '@/components/SVG/Logo/AnimatedLogo';
 // import PostListPage from './blog/page';
 import './home.css';
-import { metadata } from '../layout';
+import { metadata } from '../app/layout';
 
 export default function Home() {
 	return (

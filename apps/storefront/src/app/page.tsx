@@ -1,7 +1,7 @@
 import { log } from "@repo/logger";
 import { css } from "@repo/styled-system/css";
 import { CounterButton, Link } from "@repo/ui";
-import Home from './pages/home';
+import Home from '../pages/home';
 
 export const metadata = {
   title: "Store | Kitchen Sink",
